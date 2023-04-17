@@ -1,0 +1,2 @@
+2023-04-17 10:45:44.601 +02:00 [ERR] Content: Cannot open database "dbZainFruitSA" requested by the login. The login failed.
+Login failed for user 'DESKTOP-EERLAR5\zaino'.

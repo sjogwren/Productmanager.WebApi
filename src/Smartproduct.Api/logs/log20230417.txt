@@ -1,0 +1,4 @@
+2023-04-17 05:35:17.485 +02:00 [ERR] Content: Incorrect syntax near '.'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+2023-04-17 05:59:00.115 +02:00 [ERR] Content: Cannot bulk load. The file "Products.xlsx" does not exist or you don't have file access rights.
+2023-04-17 07:23:38.380 +02:00 [ERR] Content: An error occurred while updating the entries. See the inner exception for details.

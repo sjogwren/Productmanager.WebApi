@@ -1,0 +1,13 @@
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\bin\Debug\netcoreapp3.1\Smartproduct.Interface.deps.json
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\bin\Debug\netcoreapp3.1\Smartproduct.Interface.dll
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\bin\Debug\netcoreapp3.1\Smartproduct.Interface.pdb
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\bin\Debug\netcoreapp3.1\Smartproduct.Model.dll
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\bin\Debug\netcoreapp3.1\Smartproduct.Model.pdb
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.csproj.AssemblyReference.cache
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.AssemblyInfoInputs.cache
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.AssemblyInfo.cs
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.csproj.CoreCompileInputs.cache
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.csproj.CopyComplete
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.dll
+C:\Users\zaino\source\repos\Smartproduct.WebApi\src\Smartproduct.Interface\obj\Debug\netcoreapp3.1\Smartproduct.Interface.pdb
