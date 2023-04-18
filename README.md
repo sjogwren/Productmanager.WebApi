@@ -16,6 +16,37 @@ GO
 USE dbZainFruitSA
 GO
 
+CREATE TABLE Product
+(
+	ProductId	INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	ProductCode	VARCHAR(255) NOT NULL,
+	Name VARCHAR(255) NOT NULL,
+	Description VARCHAR(255),
+	CategoryName VARCHAR(255),
+	Price DECIMAL NOT NULL,
+	Image VARCHAR(255),
+	CreatedOn DATETIME,
+	CreatedBy VARCHAR(255),
+	DeletedOn DATETIME,
+	DeletedBy INT
+)
+GO
+
+
+
+
+CREATE TABLE Category
+(
+	CategoryId INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	Name	VARCHAR(255),
+	CategoryCode		VARCHAR(255),
+	IsActive	BIT,
+	CreatedOn DATETIME,
+	CreatedBy VARCHAR(255),
+	DeletedOn DATETIME,
+	DeletedBy INT
+)
+GO
 
 
 
@@ -42,37 +73,6 @@ CREATE TABLE [dbo].[ExternalUser](
 	)
 GO
 
-CREATE TABLE Category
-(
-	CategoryId INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	Name	VARCHAR(255),
-	CategoryCode		VARCHAR(255),
-	IsActive	BIT,
-	CreatedOn DATETIME,
-	CreatedBy VARCHAR(500),
-	DeletedOn DATETIME,
-	DeletedBy INT
-)
-GO
-
-
-CREATE TABLE Product
-(
-	ProductId	INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	ProductCode	VARCHAR(255) NOT NULL,
-	Name VARCHAR(255) NOT NULL,
-	Description VARCHAR(255),
-	CategoryName VARCHAR(255),
-	Price DECIMAL(18,2) NOT NULL,
-	Image VARCHAR(255),
-	CreatedOn DATETIME,
-	CreatedBy VARCHAR(500),
-	DeletedOn DATETIME,
-	DeletedBy INT
-)
-GO
-
-
 
 CREATE TABLE [dbo].[File](
 	[FileId] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE [dbo].[File](
 	[FileContentType] [varchar](255) NOT NULL,
 	[FileLength] [int] NOT NULL,
 	[CreatedOn] [datetime] NOT NULL,
-	[CreatedBy] [varchar](500),
+	[CreatedBy] [varchar](255) NOT NULL,
 	[DeletedOn] [datetime] NULL,
 	[DeletedByUserID] [int] NULL
 )
