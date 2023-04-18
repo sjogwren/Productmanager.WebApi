@@ -16,7 +16,7 @@ GO
 USE dbZainFruitSA
 GO
 
-select * from 
+
 
 
 CREATE TABLE [dbo].[ExternalUser](
@@ -38,20 +38,18 @@ CREATE TABLE [dbo].[ExternalUser](
 	[NormalizedEmail] [varchar](255) NULL,
 	[ConcurrencyStamp] [varchar](255) NULL,
 	[TwoFactorEnabled] [bit] NULL,
-	[LockoutEnd] [datetimeoffset] NULL,
-	[CreatedBy] [varchar](500) UNIQUE,
-	[CreatedOn] [datetime] NULL,
+	[LockoutEnd] [datetimeoffset] NULL
 	)
 GO
 
 CREATE TABLE Category
 (
 	CategoryId INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	Name	VARCHAR(255) UNIQUE,
+	Name	VARCHAR(255),
 	CategoryCode		VARCHAR(255),
 	IsActive	BIT,
 	CreatedOn DATETIME,
-	CreatedBy VARCHAR(500) FOREIGN KEY REFERENCES ExternalUser(CreatedBy),
+	CreatedBy VARCHAR(500),
 	DeletedOn DATETIME,
 	DeletedBy INT
 )
@@ -64,11 +62,11 @@ CREATE TABLE Product
 	ProductCode	VARCHAR(255) NOT NULL,
 	Name VARCHAR(255) NOT NULL,
 	Description VARCHAR(255),
-	CategoryName VARCHAR(255) FOREIGN KEY REFERENCES Category(Name),
+	CategoryName VARCHAR(255),
 	Price DECIMAL(18,2) NOT NULL,
 	Image VARCHAR(255),
 	CreatedOn DATETIME,
-	CreatedBy VARCHAR(500) FOREIGN KEY REFERENCES ExternalUser(CreatedBy),
+	CreatedBy VARCHAR(500),
 	DeletedOn DATETIME,
 	DeletedBy INT
 )
@@ -78,13 +76,13 @@ GO
 
 CREATE TABLE [dbo].[File](
 	[FileId] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	[ProductId] [int] FOREIGN KEY REFERENCES Product(ProductId),
+	[ProductId] [int],
 	[FileName] [varchar](255) NOT NULL,
 	[FileData] [varbinary](max) NOT NULL,
 	[FileContentType] [varchar](255) NOT NULL,
 	[FileLength] [int] NOT NULL,
 	[CreatedOn] [datetime] NOT NULL,
-	[CreatedBy] [varchar](500) FOREIGN KEY REFERENCES ExternalUser(CreatedBy),
+	[CreatedBy] [varchar](500),
 	[DeletedOn] [datetime] NULL,
 	[DeletedByUserID] [int] NULL
 )
