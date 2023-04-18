@@ -9,7 +9,8 @@ Please run the following script on your sql server to recreate the database:
 5.	Database will now be created
 
 
-```CREATE DATABASE dbFruitSA
+```
+CREATE DATABASE dbFruitSA
 GO
 
 USE dbFruitSA
