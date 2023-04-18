@@ -107,6 +107,7 @@ namespace Smartproduct.Repository.Product
         {
             try
             {
+                product.CreatedOn = DateTime.Now;
                 _context.Entry(product).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
                 return true;

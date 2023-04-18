@@ -60,8 +60,8 @@ namespace Smartproduct.Api.Controllers
         [SwaggerOperation]
         public async Task<ActionResult> Update(Product e)
         {
-            await _repository.Put(e);
-            return Ok();
+            
+            return Ok(await _repository.Put(e));
         }
 
         [HttpPost("Post/{Model}")]
