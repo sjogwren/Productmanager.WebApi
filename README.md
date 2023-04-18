@@ -10,10 +10,10 @@ Please run the following script on your sql server to recreate the database:
 
 
 ```
-CREATE DATABASE dbFruitSA
+CREATE DATABASE dbZainFruitSA
 GO
 
-USE dbFruitSA
+USE dbZainFruitSA
 GO
 
 select * from 
